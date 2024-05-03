@@ -148,7 +148,6 @@ func (app *App) RunServer() {
 		if !cfg.Enabled {
 			return nil
 		}
-
 		u, err := app.services.UserService().Register(ctx, cfg.FirstUserEmail, cfg.FirstUserPass)
 		switch {
 		case errors.Is(err, user.ErrAlreadyExists):

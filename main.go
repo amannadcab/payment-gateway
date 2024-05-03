@@ -17,7 +17,7 @@ var (
 func main() {
 	cmd.Version = gitVersion
 	cmd.Commit = gitCommit
-	cmd.EmbedFrontend = lo.Must(strconv.ParseBool(embedFrontend))
+	cmd.EmbedFrontend = lo.Must(strconv.ParseBool("true"))
 
 	cmd.Execute()
 }

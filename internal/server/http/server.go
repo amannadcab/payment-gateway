@@ -14,7 +14,7 @@ import (
 
 type Config struct {
 	Address string `yaml:"address" env:"WEB_ADDRESS" env-default:"0.0.0.0" env-description:"Listen address"`
-	Port    string `yaml:"port" env:"WEB_PORT" env-default:"80" env-description:"Listen port"`
+	Port    string `yaml:"port" env:"WEB_PORT" env-default:"8080" env-description:"Listen port"`
 
 	Session middleware.SessionConfig `yaml:"session"`
 	CSRF    middleware.CSRFConfig    `yaml:"csrf"`
